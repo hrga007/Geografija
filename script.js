@@ -724,10 +724,7 @@ const QUESTION_BANK = [
 const ROUND_SIZE = 15;
 const els = {
   paletteSelect: document.getElementById('paletteSelect'),
-codex/kreiraj-kviz-prema-uputama
   textColorSelect: document.getElementById('textColorSelect'),
-    
-    main
   modeToggle: document.getElementById('modeToggle'),
   progressText: document.getElementById('progressText'),
   scoreText: document.getElementById('scoreText'),
@@ -770,7 +767,6 @@ const setPalette = (palette) => {
   els.paletteSelect.value = palette;
 };
 
-codex/kreiraj-kviz-prema-uputama
 const setTextColor = (textColor) => {
   if (textColor === 'auto') {
     document.documentElement.style.removeProperty('--user-text-color');
@@ -791,11 +787,6 @@ const loadPreferences = () => {
   setTheme(localStorage.getItem('theme-mode') || 'light');
   setPalette(localStorage.getItem('theme-palette') || 'sunset');
   setTextColor(localStorage.getItem('theme-text-color') || 'auto');
-  
-const loadPreferences = () => {
-  setTheme(localStorage.getItem('theme-mode') || 'light');
-  setPalette(localStorage.getItem('theme-palette') || 'sunset');
-main
 };
 
 const currentQuestion = () => roundQuestions[index];
@@ -877,10 +868,7 @@ els.modeToggle.addEventListener('click', () => {
   setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
 });
 els.paletteSelect.addEventListener('change', (e) => setPalette(e.target.value));
-codex/kreiraj-kviz-prema-uputama
 els.textColorSelect.addEventListener('change', (e) => setTextColor(e.target.value));
-
-main
 
 loadPreferences();
 startRound();
