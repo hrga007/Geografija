@@ -9,8 +9,6 @@
   --ok: #2f9e44;
   --bad: #c92a2a;
   --shadow: 0 12px 30px rgba(72, 38, 14, 0.12);
-  --answer-bg: color-mix(in srgb, var(--secondary), white 87%);
-  --answer-text: #2f2017;
 }
 
 :root[data-theme='dark'] {
@@ -108,10 +106,13 @@ select, .btn {
   min-height: 48px;
   padding: 12px;
   border-radius: 14px;
-  background: var(--answer-bg);
+  background: color-mix(in srgb, var(--secondary), white 87%);
   border: 1px solid color-mix(in srgb, var(--primary), transparent 68%);
-  color: var(--answer-text);
+  color: var(--text);
   font-weight: 600;
+}
+:root[data-theme='dark'] .answer {
+  color: #2f2017;
 }
 .answer:hover { filter: brightness(0.98); }
 
