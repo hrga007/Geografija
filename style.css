@@ -110,8 +110,14 @@ select, .btn {
   color: var(--text);
   font-weight: 600;
 }
+codex/kreiraj-kviz-prema-uputama
 :root[data-theme='dark'] .answer {
   color: #000000;
+  
+codex/kreiraj-kviz-prema-uputama
+:root[data-theme='dark'] .answer {
+  color: #2f2017;
+main
 }
 
 .answer:hover {
@@ -129,6 +135,14 @@ select, .btn {
 .feedback.bad h3 {
   color: var(--bad);
 }
+codex/kreiraj-kviz-prema-uputama
+
+.answer:hover { filter: brightness(0.98); }
+
+.feedback h3 { margin-top: 0; }
+.feedback.ok h3 { color: var(--ok); }
+.feedback.bad h3 { color: var(--bad); }
+main
 
 .final { text-align: center; }
 .final h2 { margin: 0 0 8px; }
