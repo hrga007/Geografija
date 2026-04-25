@@ -19,9 +19,8 @@
   --text: #f4ece4;
   --muted: #c6b5a6;
   --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
-  --answer-bg: color-mix(in srgb, var(--secondary), white 87%);
-  --answer-text: #2f2017;
 }
+
 
 :root[data-palette='earth'] {
   --primary: #6b7d3a;
