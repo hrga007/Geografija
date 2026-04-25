@@ -19,7 +19,6 @@
   --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
-
 :root[data-palette='earth'] {
   --primary: #6b7d3a;
   --secondary: #cf7a52;
@@ -114,11 +113,22 @@ select, .btn {
 :root[data-theme='dark'] .answer {
   color: #2f2017;
 }
-.answer:hover { filter: brightness(0.98); }
 
-.feedback h3 { margin-top: 0; }
-.feedback.ok h3 { color: var(--ok); }
-.feedback.bad h3 { color: var(--bad); }
+.answer:hover {
+  filter: brightness(0.98);
+}
+
+.feedback h3 {
+  margin-top: 0;
+}
+
+.feedback.ok h3 {
+  color: var(--ok);
+}
+
+.feedback.bad h3 {
+  color: var(--bad);
+}
 
 .final { text-align: center; }
 .final h2 { margin: 0 0 8px; }
