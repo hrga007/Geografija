@@ -2,7 +2,9 @@
   --bg: #fff7ef;
   --surface: #ffffff;
   --text: #2f2017;
+codex/kreiraj-kviz-prema-uputama
   --answer-text-color: var(--text);
+main
   --muted: #745c4a;
   --primary: #f08a24;
   --secondary: #f9bf45;
@@ -16,7 +18,10 @@
   --bg: #1c1612;
   --surface: #2a221d;
   --text: #f4ece4;
+codex/kreiraj-kviz-prema-uputama
   --answer-text-color: #000000;
+
+main
   --muted: #c6b5a6;
   --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
@@ -38,7 +43,11 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   background: radial-gradient(circle at top right, color-mix(in srgb, var(--primary), var(--bg) 82%), var(--bg));
+codex/kreiraj-kviz-prema-uputama
   color: var(--user-text-color, var(--text));
+
+  color: var(--text);
+  main
 }
 
 .app {
@@ -78,7 +87,11 @@ select, .btn {
   border-radius: 12px;
   border: 1px solid color-mix(in srgb, var(--primary), transparent 55%);
   background: color-mix(in srgb, var(--primary), white 92%);
+codex/kreiraj-kviz-prema-uputama
   color: var(--user-text-color, var(--text));
+  
+  color: var(--text);
+main
   padding: 10px 12px;
   font-weight: 600;
 }
@@ -109,9 +122,23 @@ select, .btn {
   border-radius: 14px;
   background: color-mix(in srgb, var(--secondary), white 87%);
   border: 1px solid color-mix(in srgb, var(--primary), transparent 68%);
+codex/kreiraj-kviz-prema-uputama
   color: var(--answer-text-color);
   font-weight: 600;
 }
+  color: var(--text);
+  font-weight: 600;
+}
+codex/kreiraj-kviz-prema-uputama
+:root[data-theme='dark'] .answer {
+  color: #000000;
+  
+codex/kreiraj-kviz-prema-uputama
+:root[data-theme='dark'] .answer {
+  color: #2f2017;
+main
+}
+main
 
 .answer:hover {
   filter: brightness(0.98);
@@ -128,6 +155,17 @@ select, .btn {
 .feedback.bad h3 {
   color: var(--bad);
 }
+codex/kreiraj-kviz-prema-uputama
+
+codex/kreiraj-kviz-prema-uputama
+
+.answer:hover { filter: brightness(0.98); }
+
+.feedback h3 { margin-top: 0; }
+.feedback.ok h3 { color: var(--ok); }
+.feedback.bad h3 { color: var(--bad); }
+main
+main
 
 .final { text-align: center; }
 .final h2 { margin: 0 0 8px; }
